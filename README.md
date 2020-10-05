@@ -914,12 +914,23 @@ The syntax API is still a work in progress. Here are a couple of pointers:
 
 ## General tips and recommendations
 
+### How to use LuaRocks packages
+
+One of the advantages of using Lua is that it gives you access to its ecosystem of third-party packages. A common method of acquiring these packages is through the [LuaRocks](https://luarocks.org/) package manager.
+
+This section will walk you through the installation of a specific LuaRocks version and the manual alteration of your `package.path` and `package.cpath` globals. If you're looking for a more automated solution, you may be interested in the following plugins:
+
+- [theHamsta/nvim_rocks](https://github.com/theHamsta/nvim_rocks)
+- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim#plenaryneorocks)
+- [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)
+
+Keep in mind that Neovim doesn't have a built-in way of managing dependencies. As such, using a LuaRocks package in a plugin will either require you to vendor it along with your plugin or to ask your users to fetch it themselves. This section is provided mainly for educational purposes.
+
 **TODO**:
 - Hot-reloading of modules
 - `vim.validate()`?
 - Add stuff about unit tests? I know Neovim uses the [busted](https://olivinelabs.com/busted/) framework, but I don't know how to use it for plugins
 - Best practices? I'm not a Lua wizard so I wouldn't know
-- How to use LuaRocks packages ([wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)?)
 
 ## Miscellaneous
 
