@@ -50,6 +50,7 @@
 * [Defining autocommands](#defining-autocommands)
 * [Defining syntax/highlights](#defining-syntaxhighlights)
 * [General tips and recommendations](#general-tips-and-recommendations)
+  * [How to use LuaRocks packages](#how-to-use-luarocks-packages)
 * [Miscellaneous](#miscellaneous)
   * [vim.loop](#vimloop)
   * [vim.lsp](#vimlsp)
